@@ -17,8 +17,7 @@ let playGame = true;
 
 if (playGame) {
   submit.addEventListener('click', function (e) {
-    e.preventDefault();    // not gone to direct server thats why we use preventDefault method
-    const guess = parseInt(userInput.value);
+    e.preventDefault();    // not gone to direct server thats why we use preventDefault metho    const guess = parseInt(userInput.value);
     console.log(guess);
     validateGuess(guess);
   });
@@ -45,7 +44,7 @@ function validateGuess(guess) {
 }
 
 function checkGuess(guess) {
-  if (guess === randomNumber) {
+  if (guess === randomNumber) { 
     displayMessage(`You guessed it right`);
     endGame();
   } else if (guess < randomNumber) {
