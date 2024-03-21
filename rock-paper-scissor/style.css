@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(135deg, #4fccd5 0%, #d042cb 100%);
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #9738c3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Add a transition for the shadow */
+}
+
+.container:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enlarge the shadow on hover */
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Increase the font size for headings */
+    font-weight: bold; /* Make the headings bold */
+}
+
+
+.button {
+    background: linear-gradient(135deg, #4fccd5 0%, #d042cb 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px; /* Add border radius for a more modern look */
+    font-weight: bold; /* Make the text bold */
+}
+
+.button:hover {
+    background-color: #aa2cac;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
